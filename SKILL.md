@@ -1,17 +1,15 @@
 ---
 name: codex-rollout-extract
 description: |
-  Use when a user provides chat/log/context files from another Agent session
-  (e.g., Codex, a different Claude Code instance, Cursor, Windsurf) and needs
-  to understand and continue that work. Also triggered by phrases like
-  "恢复上下文", "接手工作", "之前做到哪了", "从聊天记录恢复",
-  "交接", "handoff".
-  NOT when the session is from Claude Code (use claude-code-session-extract instead).
-  NOT when the current conversation already has sufficient context
-  (use the regular conversation flow instead).
+  DEPRECATED — use session-extract instead.
+  This skill has been merged into the unified session-extract skill
+  which auto-detects platform (Codex vs Claude Code).
 ---
 
-# Codex Rollout Extract
+# DEPRECATED: Codex Rollout Extract
+
+> **This skill is deprecated.** Use `session-extract` instead — it auto-detects
+> the platform and handles both Codex and Claude Code sessions with a single script.
 
 ## 概述
 
